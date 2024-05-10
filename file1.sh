@@ -5,7 +5,7 @@ echo "Enter your username"
 
 read username
 
-echo "Entering my username is : $username /n"
+echo "Entering my username is : $username "
 
 echo "Enter your password"
 
