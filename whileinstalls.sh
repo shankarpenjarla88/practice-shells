@@ -24,7 +24,7 @@ userId=$(id -u)
 
 installs=$(yum list installed -y | grep git )
 
-while read i
+while [ i in $@ ]
 do
   echo "MULTIPLE INSTALLATIONS $i"
   if [ $installs -ne 0 ]
