@@ -1,8 +1,12 @@
-#!/bin/bash ---> it is sheband to execute linux we are writing.
+#!/bin/bash ---> it is sheband to that we are informing linux to execute the script.
 
-l1=vivo
-l2=oppo
+rtr1=$1
+rtr2=$2
 
-echo "$l1 have excellent features, it is better and best for middle class people"
-echo " Even $l2 have diffrent features and compare with oopo"
+echo "$1 :we can use it as version control,review the changes,security and backup,collobaration"
+echo "$2 : is automatio to linux and we deploy our project using $2"
+
+
+
+
 
