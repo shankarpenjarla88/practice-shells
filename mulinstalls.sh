@@ -7,7 +7,7 @@ Y="\e[33m"
 
 validate() {
 
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then
       echo -e " $R INSTALLATION IS FAILED $N"
     else
