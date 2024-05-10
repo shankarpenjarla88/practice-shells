@@ -24,12 +24,10 @@ userId=$(id -u)
 
 installs=$(yum list installed -y | grep git )
 
-while [ i in $@ ]
+while [ $installs -ne 0  ];
 do
-  echo "MULTIPLE INSTALLATIONS $i"
-  if [ $installs -ne 0 ]
-  then
-    echo -e "$Y Already installed dont need to install again $N"
+  echo "MULTIPLE INSTALLATIONS $@"
+  echo -e "$Y Already installed dont need to install again $N"
     exit 1
   else
     echo -e "$G Get ready for installation"
