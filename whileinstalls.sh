@@ -26,10 +26,10 @@ installs=$(yum list installed -y | grep git )
 
 for i in $@
 do
-  if [ $installs -ne 0 ]
+  if [ "$installs" -ne 0 ]
   then
     echo -e "$Y Already installed dont need to install again $N"
-    exit 1
+     exit 1
   else
     echo -e "$G Get ready for installation"
      yum install $i -y &>>$Logfile
