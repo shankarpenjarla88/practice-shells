@@ -10,7 +10,7 @@ login=$(id -u)
 
 Date=$(date +%F)
 ScriptName=$0
-LogFile=/logdir/$ScriptName-$Date.log
+LogFile=/tmp/$ScriptName-$Date.log
 
 if [ $login -ne 0 ]
 then
