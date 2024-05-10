@@ -25,7 +25,7 @@ userId=$(id -u)
 installs=$(yum list installed -y | grep git )
 
 for i in $@
-then 
+do
   if [ $installs -ne 0 ]
   then
     echo -e "$Y Already installed dont need to install again $N"
@@ -34,6 +34,7 @@ then
     echo -e "$G Get ready for installation"
      yum install $i -y &>>$Logfile
  fi
+done 
 
 
 validate $? "Installations is :"
